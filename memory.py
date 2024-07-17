@@ -32,7 +32,7 @@ def check_game_process(root):
     if not game_found:
         root.after(0, lambda: messagebox.showerror("Error", "Cannot find game process. Please start the game."))
         stop_threads()  # Dừng tất cả các luồng khi không tìm thấy game
-        time.sleep(2)  # Chờ 5 giây trước khi tiếp tục kiểm tra lại
+        time.sleep(2)  # Chờ 2 giây trước khi tiếp tục kiểm tra lại
     else:
         root.after(1000, lambda: check_game_process(root))  # Kiểm tra lại sau mỗi giây
 
