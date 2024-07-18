@@ -44,7 +44,7 @@ def set_custom_value(base, offsets, entry, checkbox_var, min_val, max_val, key):
 
 def create_gui():
     root = tk.Tk()
-    root.title("Pham Thanh Tung")
+    root.title("ez Tool")
     icon_path = 'icon.ico'
     root.iconbitmap(icon_path)
 
